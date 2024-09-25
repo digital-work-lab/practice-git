@@ -1,4 +1,3 @@
 # Practice Git
 
-
-Link to codespaces
+- [Git Merges](notebooks/git_merge.ipynb)
