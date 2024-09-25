@@ -1,0 +1,6 @@
+{
+    "name": "Your Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/python:3.9",
+    "postStartCommand": "code notebooks/git_merge.ipynb"
+}
+
