@@ -1,0 +1,5 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "jupyter.askForKernelRestart": false,   // Disables kernel restart prompts
+    "python.disableInstallationCheck": true // Disables installation prompts
+}
