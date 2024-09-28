@@ -12,7 +12,7 @@ You can select any of the following notebooks to start practicing:
 
 ## Pedagogical foundations
 
-https://digital-work-lab.github.io/rethink-git-teaching/
+Wagner, G., and Thurner, L. "Rethinking How We Teach Git: Recommendations and Practical Strategies for the Information Systems Curriculum". *Journal of Information Systems Education*, 36(1). (see [summary](https://digital-work-lab.github.io/rethink-git-teaching/))
 
 ## License
 
