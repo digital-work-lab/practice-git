@@ -5,6 +5,10 @@
 
 Hello and welcome to our Git notebooks!
 
+We recommend to run the notebooks in GitHub Codespaces:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=digital-work-lab/practice-git)
+
 You can select any of the following notebooks to start practicing:
 
 - [Git Committing](notebooks/git_committing.ipynb)
