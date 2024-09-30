@@ -1,7 +1,7 @@
 From 37f4db810b5a0e619747cc6f65a24ae824513da4 Mon Sep 17 00:00:00 2001
 From: Gerit Wagner <gerit.wagner@uni-bamberg.de>
 Date: Mon, 30 Sep 2024 08:58:38 +0200
-Subject: [PATCH] replace color import
+Subject: [PATCH 1/1] replace color import
 
 ---
  colrev/ui_cli/cli.py | 22 ++++++++++++++--------
