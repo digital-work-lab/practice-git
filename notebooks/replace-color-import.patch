@@ -1,0 +1,98 @@
+From 37f4db810b5a0e619747cc6f65a24ae824513da4 Mon Sep 17 00:00:00 2001
+From: Gerit Wagner <gerit.wagner@uni-bamberg.de>
+Date: Mon, 30 Sep 2024 08:58:38 +0200
+Subject: [PATCH] replace color import
+
+---
+ colrev/ui_cli/cli.py | 22 ++++++++++++++--------
+ 1 file changed, 14 insertions(+), 8 deletions(-)
+
+diff --git a/colrev/ui_cli/cli.py b/colrev/ui_cli/cli.py
+index 385e10a1..54b88306 100644
+--- a/colrev/ui_cli/cli.py
++++ b/colrev/ui_cli/cli.py
+@@ -30,7 +30,6 @@ import colrev.ui_cli.add_package_to_settings
+ import colrev.ui_cli.cli_status_printer
+ import colrev.ui_cli.cli_validation
+ import colrev.ui_cli.dedupe_errors
+-from colrev.constants import Colors
+ from colrev.constants import EndpointType
+ from colrev.constants import Fields
+ from colrev.constants import Filepaths
+@@ -51,6 +50,13 @@ from colrev.constants import ScreenCriterionType
+ # Note: autocompletion needs bash/... activation:
+ # https://click.palletsprojects.com/en/7.x/bashcomplete/
+ 
++RED = "\033[91m"
++GREEN = "\033[92m"
++ORANGE = "\033[93m"
++BLUE = "\033[94m"
++END = "\033[0m"
++
++
+ EXACT_CALL = "colrev " + subprocess.list2cmdline(sys.argv[1:])  # nosec
+ 
+ PACKAGE_MANAGER = colrev.package_manager.package_manager.PackageManager()
+@@ -87,7 +93,7 @@ def _add_endpoint_interactively(add: str, endpoint_type: EndpointType) -> str:
+     endpoint = answers["package"]
+ 
+     if not PACKAGE_MANAGER.is_installed(endpoint):
+-        print(f"{Colors.GREEN}Install package{Colors.END}")
++        print(f"{GREEN}Install package{END}")
+         PACKAGE_MANAGER.install(packages=[endpoint])
+ 
+     return endpoint
+@@ -839,7 +845,7 @@ def prep(
+     except colrev_exceptions.ServiceNotAvailableException as exc:
+         print(exc)
+         print("You can use the force mode to override")
+-        print(f"  {Colors.ORANGE}colrev prep -f{Colors.END}")
++        print(f"  {ORANGE}colrev prep -f{END}")
+         return
+ 
+ 
+@@ -930,7 +936,7 @@ def _view_dedupe_details(dedupe_operation: colrev.ops.dedupe.Dedupe) -> None:
+     info = dedupe_operation.get_info()
+ 
+     if len(info["same_source_merges"]) > 0:
+-        print(f"\n\n{Colors.RED}Same source merges to check:{Colors.END}")
++        print(f"\n\n{RED}Same source merges to check:{END}")
+         print("\n- " + "\n- ".join(info["same_source_merges"]))
+ 
+     print(info["source_overlaps"])
+@@ -2216,7 +2222,7 @@ def validate(
+             threshold=threshold,
+         )
+ 
+-    review_manager.logger.info("%sCompleted validation%s", Colors.GREEN, Colors.END)
++    review_manager.logger.info("%sCompleted validation%s", GREEN, END)
+ 
+ 
+ @main.command(help_priority=18)
+@@ -2312,12 +2318,12 @@ def _print_environment_status(
+     print("\nCoLRev environment status\n")
+     print("Index\n")
+     if environment_details["index"]["status"] == "up":
+-        print(f" - Status: {Colors.GREEN}up{Colors.END}")
++        print(f" - Status: {GREEN}up{END}")
+         print(f' - Path          : {environment_details["index"]["path"]}')
+         print(f' - Size          : {environment_details["index"]["size"]} records')
+         print(f' - Last modified : {environment_details["index"]["last_modified"]}')
+     else:
+-        print(f" - Status: {Colors.RED}down{Colors.END}")
++        print(f" - Status: {RED}down{END}")
+ 
+     print("\nCoLRev projects\n")
+     project_repos = [
+@@ -2860,7 +2866,7 @@ def show(  # type: ignore
+         for cmd in cmds:
+             print(
+                 f"{cmd['date']} ({cmd['committer']}, {cmd['commit_id']}):    "
+-                f"{Colors.ORANGE}{cmd['cmd']}{Colors.END}"
++                f"{ORANGE}{cmd['cmd']}{END}"
+             )
+ 
+ 
+-- 
+2.46.2
+
