@@ -14,4 +14,3 @@
     "forwardPorts": [8888],  // Open the Jupyter port if needed
     "remoteUser": "vscode"  // (Optional) User to run the container
 }
-
