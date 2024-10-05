@@ -18,6 +18,16 @@ You can select any of the following notebooks to start practicing:
 | [Git committing](notebooks/git_committing.ipynb)           | 90 min   |
 | [Git merge conflicts](notebooks/git_merge_conflicts.ipynb) | 70 min   |
 
+## Feedback and Contributions
+
+We welcome your feedback!
+If you have suggestions for improvement, find any issues, or would like to contribute new features or exercises, we encourage you to open a pull request or submit an issue.
+Contributions help us make this resource better for everyone.
+Whether it's fixing a bug, improving existing content, or adding new scenarios, we value your input!
+
+Feel free to reach out through the GitHub repository’s [issues](https://github.com/digital-work-lab/practice-git/issues) or [pull requests](https://github.com/digital-work-lab/practice-git/pulls) sections.
+Together, we can create an even more useful learning tool for Git!
+
 ## Pedagogical foundations
 
 Wagner, G., and Thurner, L. "Rethinking How We Teach Git: Recommendations and Practical Strategies for the Information Systems Curriculum". *Journal of Information Systems Education*, 36(1). (see [summary](https://digital-work-lab.github.io/rethink-git-teaching/))
