@@ -22,6 +22,10 @@ You can select any of the following notebooks to start practicing:
 
 Wagner, G., and Thurner, L. "Rethinking How We Teach Git: Recommendations and Practical Strategies for the Information Systems Curriculum". *Journal of Information Systems Education*, 36(1). (see [summary](https://digital-work-lab.github.io/rethink-git-teaching/))
 
+## Cite
+
+Gerit Wagner. (2024). Git Practice Notebooks (Version 0.1.0). Zenodo. https://doi.org/10.5281/zenodo.13892877
+
 ## License
 
 The contents are licensed under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
