@@ -11,10 +11,11 @@ We recommend to run the notebooks in GitHub Codespaces:
 
 You can select any of the following notebooks to start practicing:
 
-- [Git branching](notebooks/git_branching.ipynb)
-- [Git committing](notebooks/git_committing.ipynb)
-- [Git merge conflicts](notebooks/git_merge_conflicts.ipynb)
-- [Git merge strategies](notebooks/git_merge_strategy.ipynb)
+| Notebook                                                   | Time     |
+|------------------------------------------------------------|----------|
+| [Git branching](notebooks/git_branching.ipynb)             | 60 min   |
+| [Git committing](notebooks/git_committing.ipynb)           | 90 min   |
+| [Git merge conflicts](notebooks/git_merge_conflicts.ipynb) | 70 min   |
 
 ## Pedagogical foundations
 

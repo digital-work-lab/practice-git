@@ -24,3 +24,18 @@ def run(selection):
     if selection not in QUESTIONS:
         return
     display_quiz(QUESTIONS[selection], shuffle_answers=False)
+
+
+# To Use:
+"""
+# Task 3: Quizzes  <a id="task-3"></a>
+
+To complete this notebook, you can work through the following quizzes.
+
+*Note: You can select your solutions without running the preceding code.*
+
+
+import quizzes
+quizzes.run("merge_conflict_quizz")
+
+"""
