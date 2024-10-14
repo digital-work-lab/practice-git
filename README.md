@@ -14,9 +14,9 @@ You can select any of the following notebooks to start practicing:
 
 | Notebook                                                   | Time     |
 |------------------------------------------------------------|----------|
-| [Git branching](notebooks/git_branching.ipynb)             | 60 min   |
-| [Git committing](notebooks/git_committing.ipynb)           | 90 min   |
-| [Git merge conflicts](notebooks/git_merge_conflicts.ipynb) | 70 min   |
+| [Git branching](notebooks/git_branching.ipynb)             | 50 min   |
+| [Git committing](notebooks/git_committing.ipynb)           | 50 min   |
+| [Git merge conflicts](notebooks/git_merge_conflicts.ipynb) | 40 min   |
 
 ## Feedback and Contributions
 
