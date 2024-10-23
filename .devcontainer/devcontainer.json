@@ -4,7 +4,8 @@
     "extensions": [
         "ms-python.python",       // Python extension
         "ms-toolsai.jupyter",     // Jupyter extension
-        "ms-azuretools.vscode-docker" // (Optional) Docker extension if needed
+        "ms-azuretools.vscode-docker", // (Optional) Docker extension if needed
+        "vstirbu.vscode-pdf-viewer" // PDF viewer extension
     ],
     "settings": {
         "python.pythonPath": "/usr/local/bin/python",  // Define your Python path
