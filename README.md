@@ -14,9 +14,9 @@ You can select any of the following notebooks to start practicing:
 
 | Notebook                                                                                 | Time     |
 |------------------------------------------------------------------------------------------| -------- |
-| Core area: [Branching](notebooks/git_branching.ipynb)                                    | 40 min   |
+| Core area: [Branching](notebooks/git_branching.ipynb)                                    | 70 min   |
 | Core area: [Committing](notebooks/git_committing.ipynb)                                  | 40 min   |
-| Transfer: Branching - Committing: [merge conflicts](notebooks/git_merge_conflicts.ipynb) | 40 min   |
+| Transfer: Branching - Committing: [merge conflicts](notebooks/git_merge_conflicts.ipynb) | 30 min   |
 | Core area: [Collaborating](notebooks/git_collaborating.ipynb)                            | 20 min   |
 
 <!--| Transfer: Branching - Committing - Collaborating: TODO                                   | 20 min   | -->
